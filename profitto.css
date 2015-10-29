@@ -1,0 +1,175 @@
+body {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: white;
+  font-size: 60px;
+}
+
+svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-view {
+  background-image: url('nexus5-blank.png');
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-wrapper,
+.footer-wrapper {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 0 10px;
+}
+
+.white-background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+}
+
+.main-wrapper {
+  position: relative;
+  height: 750px;
+}
+
+.main-left {
+  float: left;
+  margin: 80px 0;
+}
+
+.main-wrapper .mobile-view {
+  padding: 48px 17px 0 15px;
+  width: 300px;
+  height: 589px;
+  float: right;
+  display: inline-block;
+  margin-top: 100px;
+}
+
+.main-wrapper .mobile-view img {
+  width: 100%;
+}
+
+.download p {
+  font-size: 36px;
+  color: rgb(200, 200, 200);
+}
+
+.download-android {
+  width: 200px;
+}
+
+footer {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #242424;
+}
+
+.footer-wrapper {
+  padding: 10px 10px 40px;
+}
+
+footer .links {
+  float: right;
+}
+
+footer .links a {
+  color: #999;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 2px;
+  background-color: transparent;
+  margin-right: 10px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+footer .links a i {
+  line-height: 30px;
+}
+
+footer .links a:hover {
+  background-color: #198abf;
+  color: #fff;
+}
+
+footer .copyright {
+  float: left;
+  line-height: 30px;
+}
+
+@media all and (max-height: 850px) {
+  footer {
+    position: relative;
+  }
+}
+
+@media screen and (max-width:1440px) {
+  .main {
+    padding-top: 0;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .main-wrapper {
+    text-align: center;
+    height: auto;
+  }
+  .main-left {
+    float: none;
+    margin: 40px 0;
+  }
+  .main-wrapper .mobile-view {
+    float: none;
+    width: 240px;
+    height: 471px;
+    padding: 39px 13px 0 12px;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  footer {
+    text-align: center;
+  }
+  footer .copyright,
+  footer .links {
+    float: none;
+  }
+  .footer-wrapper {
+    padding: 10px;
+  }
+}
